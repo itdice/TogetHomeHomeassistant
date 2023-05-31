@@ -1,0 +1,96 @@
+# sensor.yaml
+# Toget_Home_Position_Data
+- platform: rest
+  name: togethome_position_data
+  scan_interval: 3600
+  resource: http://192.168.0.86:8712/position.json
+  value_template: '{{ value_json.valid }}'
+  json_attributes:
+    - device_data
+    - device_count
+
+# Device One
+- platform: template
+  sensors:
+    ips_device_one_name:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Name'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["device_name"] }}'
+    ips_device_one_state:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} State'
+      value_template: '{% if states.sensor.togethome_position_data.attributes.device_data[0]["device_state"] == "0000" %}Normal{%elif  states.sensor.togethome_position_data.attributes.device_data[0]["device_state"] == "4000" %}Processing{%elif  states.sensor.togethome_position_data.attributes.device_data[0]["device_state"] == "5000" %}Missing{%elif  states.sensor.togethome_position_data.attributes.device_data[0]["device_state"] == "6000" %}Disconnected{% else %}Unknown{% endif %}'
+    ips_device_one_space_id:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Space ID'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["space_id"] }}'
+    ips_device_one_space_name:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Space Name'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["space_name"] }}'
+    ips_device_one_space_size_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Space Size X'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["space_size_x"] }}'
+      unit_of_measurement: 'm'
+    ips_device_one_space_size_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Space Size Y'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["space_size_y"] }}'
+      unit_of_measurement: 'm'
+    ips_device_one_pos_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Position X'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["pos_x"] }}'
+      unit_of_measurement: 'm'
+    ips_device_one_pos_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Position Y'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["pos_y"] }}'
+      unit_of_measurement: 'm'
+    ips_device_one_pos_ratio_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Position Ratio X'
+      value_template: '{% if states.sensor.ips_device_one_space_name.state == "Living Room" %}{{ 30 + ((63 - 30) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_x"])) }}{% elif states.sensor.ips_device_one_space_name.state == "Room 3" %}{{ 2 + ((27 - 2) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_x"])) }}{% elif states.sensor.ips_device_one_space_name.state == "Room 2" %}{{ 63 + ((82 - 63) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_x"])) }}{% endif %}'
+      unit_of_measurement: '%'
+    ips_device_one_pos_ratio_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Position Ratio Y'
+      value_template: '{% if states.sensor.ips_device_one_space_name.state == "Living Room" %}{{ 53 + ((93 - 53) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_y"])) }}{% elif states.sensor.ips_device_one_space_name.state == "Room 3" %}{{ 53 + ((82 - 53) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_y"])) }}{% elif states.sensor.ips_device_one_space_name.state == "Room 2" %}{{ 10 + ((39 - 10) * (states.sensor.togethome_position_data.attributes.device_data[0]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[0]["space_size_y"])) }}{% endif %}'
+      unit_of_measurement: '%'
+    ips_device_one_scan_time:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[0]["device_id"] }} Scan Time'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[0]["data_time"] }}'
+      
+# Device Two
+- platform: template
+  sensors:
+    ips_device_two_name:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Name'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["device_name"] }}'
+    ips_device_two_state:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} State'
+      value_template: '{% if states.sensor.togethome_position_data.attributes.device_data[1]["device_state"] == "0000" %}Normal{%elif  states.sensor.togethome_position_data.attributes.device_data[1]["device_state"] == "4000" %}Processing{%elif  states.sensor.togethome_position_data.attributes.device_data[1]["device_state"] == "5000" %}Missing{%elif  states.sensor.togethome_position_data.attributes.device_data[1]["device_state"] == "6000" %}Disconnected{% else %}Unknown{% endif %}'
+    ips_device_two_space_id:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Space ID'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["space_id"] }}'
+    ips_device_two_space_name:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Space Name'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["space_name"] }}'
+    ips_device_two_space_size_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Space Size X'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["space_size_x"] }}'
+      unit_of_measurement: 'm'
+    ips_device_two_space_size_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Space Size Y'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["space_size_y"] }}'
+      unit_of_measurement: 'm'
+    ips_device_two_pos_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Position X'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["pos_x"] }}'
+      unit_of_measurement: 'm'
+    ips_device_two_pos_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Position Y'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["pos_y"] }}'
+      unit_of_measurement: 'm'
+    ips_device_two_pos_ratio_x:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Position Ratio X'
+      value_template: '{% if states.sensor.ips_device_two_space_name.state == "Living Room" %}{{ 30 + ((63 - 30) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_x"])) }}{% elif states.sensor.ips_device_two_space_name.state == "Room 3" %}{{ 2 + ((27 - 2) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_x"])) }}{% elif states.sensor.ips_device_two_space_name.state == "Room 2" %}{{ 63 + ((82 - 63) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_x"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_x"])) }}{% endif %}'
+      unit_of_measurement: '%'
+    ips_device_two_pos_ratio_y:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Position Ratio Y'
+      value_template: '{% if states.sensor.ips_device_two_space_name.state == "Living Room" %}{{ 53 + ((93 - 53) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_y"])) }}{% elif states.sensor.ips_device_two_space_name.state == "Room 3" %}{{ 53 + ((82 - 53) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_y"])) }}{% elif states.sensor.ips_device_two_space_name.state == "Room 2" %}{{ 10 + ((39 - 10) * (states.sensor.togethome_position_data.attributes.device_data[1]["pos_y"] / states.sensor.togethome_position_data.attributes.device_data[1]["space_size_y"])) }}{% endif %}'
+      unit_of_measurement: '%'
+    ips_device_two_scan_time:
+      friendly_name: 'IPS Device {{ states.sensor.togethome_position_data.attributes.device_data[1]["device_id"] }} Scan Time'
+      value_template: '{{ states.sensor.togethome_position_data.attributes.device_data[1]["data_time"] }}'

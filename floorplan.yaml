@@ -1,0 +1,7 @@
+card_mod:
+  style:
+    ha-markdown:
+      $: |
+        ha-markdown-element:first-of-type hr{
+          border-color: #303030;
+        }

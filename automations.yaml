@@ -1,0 +1,142 @@
+- id: '1685302300830'
+  alias: Room 3 공기청정기 끄기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_one_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: not
+    conditions:
+    - condition: state
+      entity_id: sensor.ips_device_one_space_name
+      state: Room 3
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 0
+  action:
+  - type: turn_off
+    device_id: d07ba80d7d96055a3a0c1dd67ed06c3f
+    entity_id: switch.gonggiceongjeonggi_2
+    domain: switch
+  mode: single
+- id: '1685302449905'
+  alias: Room 3 공기청정기 켜기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_one_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: state
+    entity_id: sensor.ips_device_one_space_name
+    state: Room 3
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 10
+  action:
+  - type: turn_on
+    device_id: d07ba80d7d96055a3a0c1dd67ed06c3f
+    entity_id: switch.gonggiceongjeonggi_2
+    domain: switch
+  mode: single
+- id: '1685302685860'
+  alias: Living Room 공기청정기 끄기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_one_state
+    from: Processing
+    to: Normal
+  - platform: state
+    entity_id: sensor.ips_device_two_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: and
+    conditions:
+    - condition: not
+      conditions:
+      - condition: state
+        entity_id: sensor.ips_device_one_space_name
+        state: Living Room
+    - condition: not
+      conditions:
+      - condition: state
+        entity_id: sensor.ips_device_two_space_name
+        state: Living Room
+  action:
+  - type: turn_off
+    device_id: b2de04191c8ebc4368c5f263bc366eb4
+    entity_id: switch.gonggiceongjeonggi
+    domain: switch
+  mode: single
+- id: '1685302852035'
+  alias: Living Room 공기청정기 켜기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_one_state
+    from: Processing
+    to: Normal
+  - platform: state
+    entity_id: sensor.ips_device_two_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: sensor.ips_device_one_space_name
+      state: Living Room
+    - condition: state
+      entity_id: sensor.ips_device_two_space_name
+      state: Living Room
+  action:
+  - type: turn_on
+    device_id: b2de04191c8ebc4368c5f263bc366eb4
+    entity_id: switch.gonggiceongjeonggi
+    domain: switch
+  mode: single
+- id: '1685302954812'
+  alias: Room 2 선풍기 끄기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_two_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: not
+    conditions:
+    - condition: state
+      entity_id: sensor.ips_device_two_space_name
+      state: Room 2
+  action:
+  - device_id: 1e7bb0c3ad0dca94f561313f154aea2a
+    domain: fan
+    entity_id: fan.museonseonpunggi
+    type: turn_off
+  mode: single
+- id: '1685303057120'
+  alias: Room 2 선풍기 켜기
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.ips_device_two_state
+    from: Processing
+    to: Normal
+  condition:
+  - condition: state
+    entity_id: sensor.ips_device_two_space_name
+    state: Room 2
+  action:
+  - device_id: 1e7bb0c3ad0dca94f561313f154aea2a
+    domain: fan
+    entity_id: fan.museonseonpunggi
+    type: turn_on
+  mode: single

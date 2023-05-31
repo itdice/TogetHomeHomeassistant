@@ -1,0 +1,50 @@
+# customize.yaml
+# Toget_Home_Position_Data
+
+# Device One
+sensor.ips_device_one_name:
+  icon: mdi:devices
+sensor.ips_device_one_state:
+  icon: mdi:map-marker-check
+sensor.ips_device_one_space_id:
+  icon: mdi:home-alert-outline
+sensor.ips_device_one_space_name:
+  icon: mdi:home-edit-outline
+sensor.ips_device_one_space_size_x:
+  icon: mdi:resize
+sensor.ips_device_one_space_size_y:
+  icon: mdi:resize
+sensor.ips_device_one_pos_x:
+  icon: mdi:select-multiple-marker
+sensor.ips_device_one_pos_y:
+  icon: mdi:select-multiple-marker
+sensor.ips_device_one_pos_ratio_x:
+  icon: mdi:aspect-ratio
+sensor.ips_device_one_pos_ratio_y:
+  icon: mdi:aspect-ratio
+sensor.ips_device_one_scan_time:
+  icon: mdi:clock-check
+  
+# Device Two
+sensor.ips_device_two_name:
+  icon: mdi:devices
+sensor.ips_device_two_state:
+  icon: mdi:map-marker-check
+sensor.ips_device_two_space_id:
+  icon: mdi:home-alert-outline
+sensor.ips_device_two_space_name:
+  icon: mdi:home-edit-outline
+sensor.ips_device_two_space_size_x:
+  icon: mdi:resize
+sensor.ips_device_two_space_size_y:
+  icon: mdi:resize
+sensor.ips_device_two_pos_x:
+  icon: mdi:select-multiple-marker
+sensor.ips_device_two_pos_y:
+  icon: mdi:select-multiple-marker
+sensor.ips_device_two_pos_ratio_x:
+  icon: mdi:aspect-ratio
+sensor.ips_device_two_pos_ratio_y:
+  icon: mdi:aspect-ratio
+sensor.ips_device_two_scan_time:
+  icon: mdi:clock-check

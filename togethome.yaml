@@ -1,0 +1,12 @@
+views:
+  - title: My Home
+    icon: mdi:home
+    badges: []
+    cards:
+      - !include floorplan.yaml
+  - title: Data
+    path: ''
+    icon: mdi:cable-data
+    badges: []
+    cards: []
+title: Toget Home
