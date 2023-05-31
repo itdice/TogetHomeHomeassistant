@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace_resources",
+    "data": {
+        "items": [
+            {
+                "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110",
+                "type": "module",
+                "id": "754b72f8a12d4a1eb216301c1d178251"
+            },
+            {
+                "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941035",
+                "type": "module",
+                "id": "938691dc2185402ba0579503d336c761"
+            },
+            {
+                "url": "/hacsfiles/config-template-card/config-template-card.js?hacstag=172177543136",
+                "type": "module",
+                "id": "a88945fafa1b4f3eb7712f922d1f4618"
+            },
+            {
+                "url": "/local/card-mod.js",
+                "type": "module",
+                "id": "60cf0a617c7541ecb844e411fcd1facf"
+            }
+        ]
+    }
+}

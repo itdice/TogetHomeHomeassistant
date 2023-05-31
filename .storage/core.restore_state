@@ -1,0 +1,294 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.it_dice",
+                "state": "home",
+                "attributes": {
+                    "editable": false,
+                    "id": "it_dice",
+                    "source": "device_tracker.nmap_tracker_9e_9d_e4_b1_e8_75",
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430",
+                    "friendly_name": "Jin Park"
+                },
+                "last_changed": "2023-05-31T11:41:16.553882+00:00",
+                "last_updated": "2023-05-31T11:41:16.553882+00:00",
+                "context": {
+                    "id": "44932647cc9ed102992b7a0527e91c55",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.jong_min_park",
+                "state": "home",
+                "attributes": {
+                    "editable": false,
+                    "id": "jong_min_park",
+                    "source": "device_tracker.nmap_tracker_ea_f0_4b_26_83_1a",
+                    "friendly_name": "Jong-min Park"
+                },
+                "last_changed": "2023-05-31T15:11:17.921172+00:00",
+                "last_updated": "2023-05-31T15:11:17.921172+00:00",
+                "context": {
+                    "id": "64a5ccef008a1eb0255dcb028258ad10",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.room_3_gonggiceongjeonggi_ggeugi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:59:54.570515+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685302300830",
+                    "friendly_name": "Room 3 \uacf5\uae30\uccad\uc815\uae30 \ub044\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:13.325457+00:00",
+                "last_updated": "2023-05-29T08:09:13.325457+00:00",
+                "context": {
+                    "id": "e90e79a59fbeb6d61e0924ac73285fa2",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.room_3_gonggiceongjeonggi_kyeogi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:34:39.718202+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685302449905",
+                    "friendly_name": "Room 3 \uacf5\uae30\uccad\uc815\uae30 \ucf1c\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:13.701515+00:00",
+                "last_updated": "2023-05-29T08:09:13.701515+00:00",
+                "context": {
+                    "id": "1b03cc019327c0f0ba6a2013839ee61d",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.living_room_gonggiceongjeonggi_ggeugi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:37:09.822934+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685302685860",
+                    "friendly_name": "Living Room \uacf5\uae30\uccad\uc815\uae30 \ub044\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:11.626143+00:00",
+                "last_updated": "2023-05-29T08:09:11.626143+00:00",
+                "context": {
+                    "id": "5c81d569f0da6789cadc55409ba6dbf5",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.living_room_gonggiceongjeonggi_kyeogi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:59:54.571848+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685302852035",
+                    "friendly_name": "Living Room \uacf5\uae30\uccad\uc815\uae30 \ucf1c\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:12.043945+00:00",
+                "last_updated": "2023-05-29T08:09:12.043945+00:00",
+                "context": {
+                    "id": "22e9243345e1184da643e450ba908d98",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.room_2_seonpunggi_ggeugi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:40:15.931674+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685302954812",
+                    "friendly_name": "Room 2 \uc120\ud48d\uae30 \ub044\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:12.471056+00:00",
+                "last_updated": "2023-05-29T08:09:12.471056+00:00",
+                "context": {
+                    "id": "52ad9ba9111baa92f1298cf2792f5b71",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.room_2_seonpunggi_kyeogi",
+                "state": "off",
+                "attributes": {
+                    "last_triggered": "2023-05-29T04:37:09.826350+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1685303057120",
+                    "friendly_name": "Room 2 \uc120\ud48d\uae30 \ucf1c\uae30"
+                },
+                "last_changed": "2023-05-29T08:09:12.898419+00:00",
+                "last_updated": "2023-05-29T08:09:12.898419+00:00",
+                "context": {
+                    "id": "84d6fcd2f1cdea4ab797820c5b1f3b0e",
+                    "parent_id": null,
+                    "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430"
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.oecul",
+                "state": "2022-03-13T23:06:26.517419+00:00",
+                "attributes": {
+                    "icon": "300",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uc678\ucd9c"
+                },
+                "last_changed": "2023-05-28T23:08:13.270416+00:00",
+                "last_updated": "2023-05-28T23:08:13.270416+00:00",
+                "context": {
+                    "id": "1bc595786100273ecae484a79f198384",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.eeokeon_kyeogi",
+                "state": "2022-09-30T04:11:48.531058+00:00",
+                "attributes": {
+                    "icon": "304",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uc5d0\uc5b4\ucee8 \ucf1c\uae30"
+                },
+                "last_changed": "2023-05-28T23:08:13.270616+00:00",
+                "last_updated": "2023-05-28T23:08:13.270616+00:00",
+                "context": {
+                    "id": "5174cb40f947db0b1153e0811f1d2574",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.eeokeon_ggeugi",
+                "state": "2022-10-01T17:49:16.702488+00:00",
+                "attributes": {
+                    "icon": "208",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uc5d0\uc5b4\ucee8 \ub044\uae30"
+                },
+                "last_changed": "2023-05-28T23:08:13.270750+00:00",
+                "last_updated": "2023-05-28T23:08:13.270750+00:00",
+                "context": {
+                    "id": "4b4f8e7bb8041f2da1df8ffcc6c3c38f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.gonggiceongjeonggi_sijag",
+                "state": "2023-05-22T08:16:51.156640+00:00",
+                "attributes": {
+                    "icon": "203",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uacf5\uae30\uccad\uc815\uae30 \uc2dc\uc791"
+                },
+                "last_changed": "2023-05-28T23:08:13.270882+00:00",
+                "last_updated": "2023-05-28T23:08:13.270882+00:00",
+                "context": {
+                    "id": "3950a81e55f2776e2b9f7399af0f0fb5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.gonggiceongjeonggi_ggeugi",
+                "state": "2023-05-22T08:16:38.458384+00:00",
+                "attributes": {
+                    "icon": "204",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uacf5\uae30\uccad\uc815\uae30 \ub044\uae30"
+                },
+                "last_changed": "2023-05-28T23:08:13.271031+00:00",
+                "last_updated": "2023-05-28T23:08:13.271031+00:00",
+                "context": {
+                    "id": "beaacc697ff12cb079bf4ae300fa578b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "scene.gangpung",
+                "state": "2023-05-04T01:28:32.269089+00:00",
+                "attributes": {
+                    "icon": "209",
+                    "color": null,
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "friendly_name": "\uac15\ud48d"
+                },
+                "last_changed": "2023-05-28T23:08:13.271162+00:00",
+                "last_updated": "2023-05-28T23:08:13.271162+00:00",
+                "context": {
+                    "id": "39cf79f55fdc095b1332c044c38260d4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2023-05-31T16:53:15.167704+00:00"
+        }
+    ]
+}

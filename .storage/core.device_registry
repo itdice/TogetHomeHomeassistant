@@ -1,0 +1,480 @@
+{
+    "version": 1,
+    "minor_version": 3,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "553192cbe1216edfb7535c36a2b5de78"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "01ad98c121045846fa01aa186f796d66",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://www.met.no/en"
+            },
+            {
+                "config_entries": [
+                    "7d158aa1ec37adf8df345e4f192fbc8d",
+                    "04184e0f4293c1dd532220daf74b93ec"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "f0:b3:ec:6b:06:5d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "apple_tv",
+                        "F0:B3:EC:6B:06:5D"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "Apple TV 4K (gen2)",
+                "name": "Jin Park\uc758 Apple TV",
+                "sw_version": "16.5",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "a93093ec8899f2cef81129128bac887d",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "cdd4e416488a9d54ec4b38e991f44661"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "8386e401abbbc244f51fcb93384d9c00"
+                    ]
+                ],
+                "manufacturer": "None",
+                "model": "Google Home Mini",
+                "name": "\uad6c\uae00 \ud648 \ubbf8\ub2c8",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "b5d1daaf00ee3fc1c70ad981cd8e8fce",
+                "via_device_id": null,
+                "area_id": "nae_bang",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "04184e0f4293c1dd532220daf74b93ec",
+                    "865b1821631471d32144f521ae045bc4"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cc:6e:a4:db:d2:75"
+                    ],
+                    [
+                        "mac",
+                        "64:1c:ae:19:bc:d8"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "samsungtv",
+                        "7db20808-b66e-442d-8f72-1499167fb3ff"
+                    ]
+                ],
+                "manufacturer": "Samsung",
+                "model": "UN55NU7150",
+                "name": "TV",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "92fa2a95d9daabc4531c5b94a1635754",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9451ef16ceb06ecd1dd6dcf8c2908412"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-705dcc9252b4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:fc4ec57e-b051-11db-88f8-705dcc9252b4"
+                    ]
+                ],
+                "manufacturer": "EFM Networks",
+                "model": "ipTIME AX8004BCM",
+                "name": "EFM Networks ipTIME AX8004BCM",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "be787bdc77ef13a3fd3c8d4645e63ce0",
+                "via_device_id": null,
+                "area_id": "nae_bang",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.0.1"
+            },
+            {
+                "config_entries": [
+                    "766cd0f1d6590eead2eb058fb0aae8fa"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ipp",
+                        "1c852a4d-b800-1f08-abcd-d0bf9c3ed7bd"
+                    ]
+                ],
+                "manufacturer": "HP",
+                "model": "Deskjet 4640 series",
+                "name": "HP Deskjet 4640 series",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8b8f16fca7f0c2b802faf8431e170395",
+                "via_device_id": null,
+                "area_id": "nae_bang",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "80ace7258c37bf96c5d23838a9bb680c"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hacs",
+                        "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+                    ]
+                ],
+                "manufacturer": "hacs.xyz",
+                "model": "",
+                "name": "HACS",
+                "sw_version": "1.21.0",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "b41c88539b1b8c65962cc5080346fb7e",
+                "via_device_id": null,
+                "area_id": "siseutem",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hacs"
+            },
+            {
+                "config_entries": [
+                    "76f50a3f899c8554d3730747c03e37b3",
+                    "04184e0f4293c1dd532220daf74b93ec"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "64:90:c1:ad:86:f5"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_miio",
+                        "64:90:c1:ad:86:f5"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "dmaker.fan.p11",
+                "name": "\ubb34\uc120\uc120\ud48d\uae30",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "1e7bb0c3ad0dca94f561313f154aea2a",
+                "via_device_id": null,
+                "area_id": "nae_bang",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "244e8858-81b7-cb63-0d75-aa3aa5f08d24"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uc138\ud0c1\uae30",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "ef700285b719c77ad1ad0259601ab401",
+                "via_device_id": null,
+                "area_id": "beranda",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "0b19e743-91ad-1341-47da-88cce13d75fd"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uacf5\uae30\uccad\uc815\uae30",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "b2de04191c8ebc4368c5f263bc366eb4",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "ace8cac2-f335-6682-dcea-f126a608c934"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uacf5\uae30\uccad\uc815\uae30",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "d07ba80d7d96055a3a0c1dd67ed06c3f",
+                "via_device_id": null,
+                "area_id": "nae_bang",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "1b098c93-2271-44f9-9822-669dc28492c6"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "TV",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "43b0a8e704c53b342327f975ebce1c2f",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "c6c950dc-f70a-cdb2-8e88-c4981f287b61"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uac74\uc870\uae30",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "796d3693136036bde23225b93a485900",
+                "via_device_id": null,
+                "area_id": "beranda",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "f42de364-78ef-9bfc-74c5-415202648eaf"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uae40\uce58\ub0c9\uc7a5\uace0",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "b05b1130649afbf463eb657f7bb0a6b0",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "88193e33-be51-4c71-5b96-73065eb23adc"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\ub0c9\uc7a5\uace0",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "c9caca7973c60345156c2988f5296a3b",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "89e7f2734ab6fb11a932f882075e17c5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "smartthings",
+                        "f5e98dcf-0899-6bf0-5080-61ea32a5abc0"
+                    ]
+                ],
+                "manufacturer": "Unavailable",
+                "model": null,
+                "name": "\uc5d0\uc5b4\ucee8",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8c296b32cc9fe72270263df9fff58169",
+                "via_device_id": null,
+                "area_id": "geosil",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://account.smartthings.com"
+            },
+            {
+                "config_entries": [
+                    "0a3f52031c27dded641a15b4475f7a24"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "95:af:ed:e6:97:4c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "0a3f52031c27dded641a15b4475f7a24",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "HomeKit Bridge",
+                "name": "HASS Bridge:21064",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "e7b30980159ee0142b24d57d09fda48f",
+                "via_device_id": null,
+                "area_id": "siseutem",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c3d5e6cd399b8f9344f7375324e6ddba"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c4:ef:16:b9:dd:5a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "c3d5e6cd399b8f9344f7375324e6ddba",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "HomeKit Accessory",
+                "name": "TV:21065",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "12db0f3df77036057f88bc57b0afbaa7",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "auth_provider.homeassistant",
+    "data": {
+        "users": [
+            {
+                "username": "itdice",
+                "password": "JDJiJDEyJDIwbDdrWlMyL0dqUlg4UGpod0xORi42ekJpdkx4S285N2JYVHI2R3NJSWFaQWZLeE5zNWZ5"
+            }
+        ]
+    }
+}

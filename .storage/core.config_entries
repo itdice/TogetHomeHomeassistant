@@ -1,0 +1,321 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "553192cbe1216edfb7535c36a2b5de78",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7d158aa1ec37adf8df345e4f192fbc8d",
+                "version": 1,
+                "domain": "apple_tv",
+                "title": "Jin Park\uc758 Apple TV",
+                "data": {
+                    "name": "Jin Park\uc758 Apple TV",
+                    "credentials": {
+                        "3": "17efe604a47e1f08c2298cab4bef4f9f026d5674e6d976552ad2ec42254e7baa:d02770f0e82d7c78434ffa26e407cdea07bacbaa0359051e6aa837fde4abe616:45454336334433352d464541462d343943352d393333342d363332383339303636354432:32356463666561312d333862362d343232662d386230332d353165306566333134393534",
+                        "4": "17efe604a47e1f08c2298cab4bef4f9f026d5674e6d976552ad2ec42254e7baa:96099db94597c58cadc2167d117669930d25018fa009cc57416545e7cafcece5:45454336334433352d464541462d343943352d393333342d363332383339303636354432:65313434666164342d353462632d343833632d396137372d323764633838666235323435",
+                        "5": ":fc77ce0fd45965404665d34d2d1463dce896f559032e2818c3c83aed60531dd3::c4e4ea84ef903910"
+                    },
+                    "address": "192.168.0.39",
+                    "identifiers": [
+                        "F0:B3:EC:6B:06:5D",
+                        "F0B3EC6B065D"
+                    ]
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "F0:B3:EC:6B:06:5D",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "cdd4e416488a9d54ec4b38e991f44661",
+                "version": 1,
+                "domain": "cast",
+                "title": "Google Cast",
+                "data": {
+                    "ignore_cec": [],
+                    "known_hosts": [],
+                    "uuid": [],
+                    "user_id": "6110eba31dc34eff9fa793b71853f773"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "cast",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "865b1821631471d32144f521ae045bc4",
+                "version": 2,
+                "domain": "samsungtv",
+                "title": "TV (UN55NU7150)",
+                "data": {
+                    "host": "192.168.0.87",
+                    "mac": "64:1c:ae:19:bc:d8",
+                    "manufacturer": "Samsung",
+                    "method": "websocket",
+                    "model": "UN55NU7150",
+                    "name": "TV",
+                    "port": 8002,
+                    "token": "10651772"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "7db20808-b66e-442d-8f72-1499167fb3ff",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "9451ef16ceb06ecd1dd6dcf8c2908412",
+                "version": 1,
+                "domain": "upnp",
+                "title": "EFM Networks ipTIME AX8004BCM",
+                "data": {
+                    "udn": "uuid:fc4ec57e-b051-11db-88f8-705dcc9252b4",
+                    "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                    "hostname": "192.168.0.1"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ssdp",
+                "unique_id": "uuid:fc4ec57e-b051-11db-88f8-705dcc9252b4::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "766cd0f1d6590eead2eb058fb0aae8fa",
+                "version": 1,
+                "domain": "ipp",
+                "title": "HP Deskjet 4640 series [3ED7BD]",
+                "data": {
+                    "host": "192.168.0.26",
+                    "port": 631,
+                    "ssl": false,
+                    "verify_ssl": false,
+                    "base_path": "/ipp/print",
+                    "name": "HP Deskjet 4640 series [3ED7BD]",
+                    "uuid": "1c852a4d-b800-1f08-abcd-d0bf9c3ed7bd"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "1c852a4d-b800-1f08-abcd-d0bf9c3ed7bd",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "80ace7258c37bf96c5d23838a9bb680c",
+                "version": 1,
+                "domain": "hacs",
+                "title": "",
+                "data": {
+                    "token": "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"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "1cf4090b8b3df559d6fcebd0cd547ae8",
+                "version": 1,
+                "domain": "synology_dsm",
+                "title": "Synology DSM: IT_DICE_Server (192.168.0.43)",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "001132C8BB0F",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b78d55550a5b980022a9e9a2f9c8bd91",
+                "version": 1,
+                "domain": "nmap_tracker",
+                "title": "Nmap Tracker 192.168.0.8",
+                "data": {},
+                "options": {
+                    "hosts": "192.168.0.8",
+                    "home_interval": 0,
+                    "exclude": "192.168.0.43",
+                    "scan_options": "-F -T4 --min-rate 10 --host-timeout 5s",
+                    "interval_seconds": 180,
+                    "consider_home": 1200
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "76f50a3f899c8554d3730747c03e37b3",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "\ubb34\uc120\uc120\ud48d\uae30",
+                "data": {
+                    "config_flow_device": "device",
+                    "host": "192.168.0.13",
+                    "token": "eb71f63e8aa16f0501b272ae922beb0d",
+                    "model": "dmaker.fan.p11",
+                    "mac": "64:90:c1:ad:86:f5",
+                    "cloud_username": "qkrwls7632@naver.com",
+                    "cloud_password": "ITdice2357",
+                    "cloud_country": "sg"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "64:90:c1:ad:86:f5",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "89e7f2734ab6fb11a932f882075e17c5",
+                "version": 2,
+                "domain": "smartthings",
+                "title": "\uc9d1",
+                "data": {
+                    "access_token": "72ae93b3-3930-4efb-b8eb-c0ef8f3bceb8",
+                    "refresh_token": "d4df9c56-09b5-4d39-997c-b73cd76a0e8f",
+                    "client_id": "dc723cda-259f-47ed-afdc-26a7e2b8b046",
+                    "client_secret": "c615d2c0-56f1-485b-bfe5-485c62b01072",
+                    "location_id": "f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                    "app_id": "95a0cec1-03e9-492d-bfd3-83afa8c058b8",
+                    "installed_app_id": "1eb24839-7b21-4048-a860-2e75d243a1d9"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "95a0cec1-03e9-492d-bfd3-83afa8c058b8_f1742f3f-f830-450e-ad95-f3f32e8b6913",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "0a3f52031c27dded641a15b4475f7a24",
+                "version": 1,
+                "domain": "homekit",
+                "title": "HASS Bridge:21064",
+                "data": {
+                    "name": "HASS Bridge",
+                    "exclude_accessory_mode": true,
+                    "port": 21064
+                },
+                "options": {
+                    "filter": {
+                        "include_domains": [
+                            "alarm_control_panel",
+                            "climate",
+                            "cover",
+                            "humidifier",
+                            "fan",
+                            "light",
+                            "lock",
+                            "media_player",
+                            "remote",
+                            "switch",
+                            "vacuum",
+                            "water_heater",
+                            "binary_sensor",
+                            "button",
+                            "automation",
+                            "demo",
+                            "device_tracker",
+                            "input_boolean",
+                            "input_button",
+                            "input_select",
+                            "person",
+                            "scene",
+                            "script",
+                            "select"
+                        ],
+                        "exclude_domains": [],
+                        "include_entities": [],
+                        "exclude_entities": [
+                            "binary_sensor.updater",
+                            "binary_sensor.efm_networks_iptime_ax8004bcm_wan_status",
+                            "media_player.jin_parkyi_apple_tv",
+                            "media_player.tv",
+                            "switch.tv",
+                            "remote.jin_parkyi_apple_tv"
+                        ]
+                    },
+                    "mode": "bridge"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "c3d5e6cd399b8f9344f7375324e6ddba",
+                "version": 1,
+                "domain": "homekit",
+                "title": "TV:21065",
+                "data": {
+                    "port": 21065,
+                    "name": "TV"
+                },
+                "options": {
+                    "filter": {
+                        "include_domains": [],
+                        "exclude_domains": [],
+                        "include_entities": [
+                            "media_player.tv"
+                        ],
+                        "exclude_entities": []
+                    },
+                    "mode": "accessory"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "accessory",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "04184e0f4293c1dd532220daf74b93ec",
+                "version": 1,
+                "domain": "nmap_tracker",
+                "title": "Nmap Tracker 192.168.0.74",
+                "data": {},
+                "options": {
+                    "hosts": "192.168.0.74",
+                    "home_interval": 0,
+                    "exclude": "192.168.0.43",
+                    "scan_options": "-F -T4 --min-rate 10 --host-timeout 5s",
+                    "interval_seconds": 180,
+                    "consider_home": 1200
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}

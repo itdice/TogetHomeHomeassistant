@@ -1,0 +1,93 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "picture-elements",
+                            "image": "/local/togethome/background@2x.png",
+                            "elements": [
+                                {
+                                    "type": "state-label",
+                                    "entity": "sensor.ips_device_one_name",
+                                    "style": {
+                                        "font-size": "xx-small",
+                                        "font-weight": "bolder"
+                                    },
+                                    "card_mod": {
+                                        "style": ":host {\n  top: {{ (states('sensor.ips_device_one_pos_ratio_y') | int)+9}}%;\n  left: {{ states('sensor.ips_device_one_pos_ratio_x') | int}}%;\n  -webkit-text-stroke: 0.3px #5d5d5d;\n"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "sensor.ips_device_one_state",
+                                    "tap_action": {
+                                        "action": "more-info"
+                                    },
+                                    "image": "/local/togethome/position_unknown@2x.png",
+                                    "state_image": {
+                                        "Normal": "/local/togethome/position_normal@2x.png",
+                                        "Processing": "/local/togethome/position_processing@2x.png",
+                                        "Missing": "/local/togethome/position_expired@2x.png",
+                                        "Disconnected": "/local/togethome/position_unknown@2x.png"
+                                    },
+                                    "style": {
+                                        "width": "30px",
+                                        "height": "50px"
+                                    },
+                                    "card_mod": {
+                                        "style": ":host {\n  top: {{ states('sensor.ips_device_one_pos_ratio_y') | int}}%;\n  left: {{ states('sensor.ips_device_one_pos_ratio_x') | int}}%;\n"
+                                    }
+                                },
+                                {
+                                    "type": "state-label",
+                                    "entity": "sensor.ips_device_two_name",
+                                    "style": {
+                                        "font-size": "xx-small",
+                                        "font-weight": "bolder"
+                                    },
+                                    "card_mod": {
+                                        "style": ":host {\n  top: {{ (states('sensor.ips_device_two_pos_ratio_y') | int)+9}}%;\n  left: {{ states('sensor.ips_device_two_pos_ratio_x') | int}}%;\n  -webkit-text-stroke: 0.3px #5d5d5d;;\n"
+                                    }
+                                },
+                                {
+                                    "type": "image",
+                                    "entity": "sensor.ips_device_two_state",
+                                    "tap_action": {
+                                        "action": "more-info"
+                                    },
+                                    "image": "/local/togethome/position_unknown@2x.png",
+                                    "state_image": {
+                                        "Normal": "/local/togethome/position_normal@2x.png",
+                                        "Processing": "/local/togethome/position_processing@2x.png",
+                                        "Missing": "/local/togethome/position_expired@2x.png",
+                                        "Disconnected": "/local/togethome/position_unknown@2x.png"
+                                    },
+                                    "style": {
+                                        "width": "30px",
+                                        "height": "50px"
+                                    },
+                                    "card_mod": {
+                                        "style": ":host {\n  top: {{ states('sensor.ips_device_two_pos_ratio_y') | int}}%;\n  left: {{ states('sensor.ips_device_two_pos_ratio_x') | int}}%;\n \n"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "weather-forecast",
+                            "entity": "weather.jib",
+                            "secondary_info_attribute": "wind_speed"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

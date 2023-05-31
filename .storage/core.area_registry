@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "\uac70\uc2e4",
+                "id": "geosil",
+                "picture": null
+            },
+            {
+                "name": "\ub0b4 \ubc29",
+                "id": "nae_bang",
+                "picture": null
+            },
+            {
+                "name": "\ubd80\uc5cc",
+                "id": "bueok",
+                "picture": null
+            },
+            {
+                "name": "\ubca0\ub780\ub2e4",
+                "id": "beranda",
+                "picture": null
+            },
+            {
+                "name": "\uc2dc\uc2a4\ud15c",
+                "id": "siseutem",
+                "picture": null
+            }
+        ]
+    }
+}

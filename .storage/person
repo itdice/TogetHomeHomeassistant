@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "minor_version": 1,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Jin Park",
+                "user_id": "0d45d6d9fb8d41e09972cf4cf9cb7430",
+                "device_trackers": [
+                    "device_tracker.nmap_tracker_9e_9d_e4_b1_e8_75"
+                ],
+                "id": "it_dice",
+                "picture": null
+            },
+            {
+                "name": "Jong-min Park",
+                "device_trackers": [
+                    "device_tracker.nmap_tracker_ea_f0_4b_26_83_1a"
+                ],
+                "user_id": null,
+                "picture": null,
+                "id": "jong_min_park"
+            }
+        ]
+    }
+}

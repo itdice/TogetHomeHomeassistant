@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "frontend.user_data_0d45d6d9fb8d41e09972cf4cf9cb7430",
+    "data": {
+        "language": {
+            "language": "ko",
+            "number_format": "language",
+            "time_format": "language"
+        },
+        "core": {
+            "showAdvanced": true
+        }
+    }
+}
